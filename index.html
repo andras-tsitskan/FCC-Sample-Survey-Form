@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="content">
+        <h1 id="title">A Brief Survey Form</h1>
+        <p id="description">This is a brief survey form to test my skills in HTML5 survey. Thanks for checking it out! :)</p>
+        <hr class="separator">
+        <form id="survey-form" action="#">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">E-mail</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your e-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age (optional)</label>
+                <input type="number" name="number" id="number" class="form-control" min="0" max="120" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <label for="dropdown">Favourite language</label>
+                <select name="dropdown" id="dropdown" class="form-control" required>
+                    <option value="" disabled selected>Select your favourite language</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Python">Python</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>How excited are you about learning new stuff?</p>
+                <input type="radio" name="excitement" id="very" value="very" required>
+                <label for="very">Very!</label><br>
+                <input type="radio" name="excitement" id="very-very" value="very-very">
+                <label for="very-very">Very-very!</label><br>
+                <input type="radio" name="excitement" id="yes" value="yes">
+                <label for="yes">Yes</label>
+            </div>
+            <div class="form-group">
+                <p>When do you like to learn new stuff?</p>
+                <input type="checkbox" name="learning-time" id="morning" value="morning" class="checkbox">
+                <label for="morning">In the morning</label><br>
+                <input type="checkbox" name="learning-time" id="afternoon" value="afternoon" class="checkbox">
+                <label for="afternoon">In the afternoon</label><br>
+                <input type="checkbox" name="learning-time" id="evening" value="evening" class="checkbox">
+                <label for="evening">In the evening</label><br>
+                <input type="checkbox" name="learning-time" id="night" value="night" class="checkbox">
+                <label for="night">In the night</label>
+            </div>
+            <div class="form-group">
+                <p>Any comments?</p>
+                <textarea name="comments" id="comments" rows="3" placeholder="Enter your comments here"></textarea>
+            </div>
+            <div class="submit">
+                <button type="submit" id="submit">SUBMIT</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
